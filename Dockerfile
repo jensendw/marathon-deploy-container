@@ -7,7 +7,7 @@ ENV DOCKER_VERSION=17.05.0-ce \
     S3CMD_VERSION=2.0.0 \
     MARATHON_DEPLOY_VERSION=0.1.55
 
-RUN apk update && apk add make ruby ruby-json ruby-rdoc ruby-dev ruby-irb git
+RUN apk update && apk add make ruby ruby-json ruby-rdoc ruby-dev ruby-irb git bash
 RUN gem install marathon_deploy -v $MARATHON_DEPLOY_VERSION
 
 
