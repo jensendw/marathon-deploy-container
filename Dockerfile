@@ -12,8 +12,8 @@ RUN gem install marathon_deploy -v $MARATHON_DEPLOY_VERSION
 
 
 
-
-
+# Install sbt from edge/testing
+RUN apk add sbt --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 # Install Docker and Docker Compose
 RUN apk --update --no-cache \
